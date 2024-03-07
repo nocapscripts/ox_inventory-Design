@@ -1,6 +1,6 @@
 local ESX = setmetatable({}, {
 	__index = function(self, index)
-		local obj = exports.es_extended:getSharedObject()
+		local obj = exports[Config.ESX]:getSharedObject()
 		self.SetPlayerData = obj.SetPlayerData
 		self.PlayerLoaded = obj.PlayerLoaded
 		return self[index]

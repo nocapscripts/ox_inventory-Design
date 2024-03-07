@@ -115,8 +115,8 @@ CreateThread(function()
 
 		Wait(500)
 
-	elseif shared.framework == 'qb' then
-		local Core = exports[Config.QB]:GetCoreObject()
+	elseif shared.framework == 'QB' then
+		local Core = exports[Config.QBCore]:GetCoreObject()
 		local items = Core.Shared.Items
 
 		if items and table.type(items) ~= 'empty' then

@@ -78,7 +78,7 @@ end
 AddEventHandler('QBCore:Server:PlayerLoaded', setupPlayer)
 
 SetTimeout(500, function()
-	Core = exports[Config.QB]:GetCoreObject()
+	Core = exports[Config.QBCore]:GetCoreObject()
 	server.GetPlayerFromId = Core.Functions.GetPlayer
 	local weapState = GetResourceState('qb-weapons')
 

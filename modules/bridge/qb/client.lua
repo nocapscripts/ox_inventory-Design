@@ -1,4 +1,4 @@
-local Core = exports[Config.Framework]:GetCoreObject()
+local Core = exports[Config.QBCore]:GetCoreObject()
 local Inventory = require 'modules.inventory.client'
 local Weapon = require 'modules.weapon.client'
 
